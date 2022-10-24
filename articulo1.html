@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetropolUnite</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" type="text/css">
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+    <!--Css Propio-->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="bg-gradient">
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light bg-gradient py-3 py-xl-4">
+        <div class="container-fluid"> <!--ver responsive tamaño de fuente de los links-->
+          <img src="/assets/logo.png" class="col-3 col-md-1 px-3" title="Montañas y sol" alt="logo montañas">
+          <a class="navbar-brand" href="/index2.html">Nombre Blog</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto my-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active ms-1 fw-bold" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Acerca de nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Login</a>
+              </li>
+            </ul>
+            <!--btn Modal-->
+            <button type="button" class="btn btn-outline-success fw-bold mx-1 me-lg-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Suscribete</button>
+          </div>
+        </div>
+      </nav>
+          <!--MODAL-->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-light" id="exampleModalLabel">Suscribete a nuestro blog</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Correo Electronico</label>
+                      <input type="email" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3 bg-warning bg-opacity-50">
+                        <p class="p-1 text-center">Recibiras notificaciones de nuestro blog para mantenerte al tanto</p>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <a href="error404.html" class="btn btn-outline-success">Suscripcion!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </header><!--FIN DEL HEADER-->
+       <!--Contenido del articulo 1 (José)-->
+    <div class="container-fluid">
+      <div class="row"><!--José-->
+        <div class="col-sm-8 border-end p-4"><!--José-->
+          <!-- <h1 class="text-center">Ruta por Argentina en dos semanas:</h1> -->
+          <h1 class="display-5">Ruta por Argentina en dos semanas:</h1>
+          <article>
+            <p class="d-none d-md-block text-md-start">En esta página voy a sintetizar toda la información que te he dado de esta ruta de dos semanas en Argentina para que puedas imprimirla o descargarla si eso te ayuda en la planificación. Puedes modificar el orden de las visitas o cambiar algunas. Por ejemplo, si no te gusta hacer trekking, en lugar de visitar El Chaltén puedes meter más días en Bariloche o añadir Puerto Madryn.</p>
+          </article>
+          <div class="container-fluid">
+                  <img src="/assets/argentina-en-dos-semanas-1.jpeg" class="img-fluid" alt="Ruta por Argentina en dos semanas">
+          </div>
+          <article>
+            <br>
+            <p class="d-none d-md-block text-md-start">Argentina es un país enorme y cuando se planifica un viaje de 15 días irremediablemente hay que renunciar a algo. Si estás valorando hacer una ruta por Argentina en dos semanas tendrás que poner sobre la mesa todas las opciones, seleccionar unas y sacrificar otras.</p>
+            <p class="d-none d-md-block text-md-start">Es importante poner sobre la mesa los tiempos que vas a perder en desplazamientos, la época del año en la que vas a viajar. No hay sitios que sea obligatorio visitar y te aseguro que algunas regiones poco conocidas de Argentina son una auténtica joya. Por todo esto, te recomiendo echar un ojo a mi artículo más genérico de lugares que visitar en Argentina. Así podrás hacerte una idea y después tener más claro cómo montar el itinerario por el país.</p>
+          </article>
+          <article>
+            <h2 class="text-center">Día 1: toma de contacto con Buenos Aires</h2>  
+            <!-- <div class="container-fluid"> -->
+            <div class="col-md-8 card-img border-0" style="float:left;"><img src="/assets/ruta-por-argentina-en-dos-semanas-2.jpeg" class="card-img-top" alt="Centro de Buenos Aires">
+            </div>
+            <p>Aunque solamente cuentes con 15 días para recorrer Argentina, hay que dedicarle tiempo a Buenos Aires. Este día puedes emplearlo al completo, si llegas a primera hora, y si no, úsalo como toma de contacto, así como para familiarizarte con el país y algunas de sus costumbres.</p>
+            <p>Disfruta las pizzas argentinas y compara con las italianas. La Pizzería Guerrín es un sitio icónico. Te darás cuenta de que comerse una pizza entera en Argentina es cosa de valientes.</p>
+            <p>Un clásico que nunca defrauda: espectáculo de tango o milonga. Los más aclamados están en San Telmo aunque los hay en toda la ciudad.           
+              <a href="https://www.civitatis.com/es/buenos-aires/espectaculo-tango-querandi" target="_blank" rel="noreferrer noopener">Puedes reservar aquí.</a>
+            </p>              
+            <!-- </div>          -->
+          </article>
+          <article>
+            <h2 class="text-center">Día 2 en Argentina: visitando el Buenos Aires clásico</h2>  
+            <div class="container-fluid">
+                <img src="/assets/ObeliscoBA2015.2.jpg" class="card-img-top" alt="Ruta por Argentina en dos semanas">
+            </div>
+            <div>
+                <p class="d-none d-md-block text-center text-md-start">El segundo de los 15 días en Argentina toca caminata por los sitios más emblemáticos y representativos de Buenos Aires:</p>
+                <ul>
+                <li><strong>Plaza de Mayo</strong>: emblemática por aquellas madres que durante la dictadura comenzaron a marchar los jueves, con pañuelos blancos en la cabeza, como símbolo de protesta ante los desaparecidos. Allí mismo está la Casa Rosada (Sede de Gobierno), el Cabildo y la Catedral.</li>
+                <li><strong>Palacio Barolo</strong>: un edificio cuya historia es fascinante y desde donde se tienen algunas de las mejores vistas de la ciudad.</li>
+                <li><strong>Congreso: </strong>podrás verlo desde el Palacio Barolo y llama la atención por las cúpulas, que llegaron a ser las más altas de Buenos Aires.</li>
+                <li><strong>Avenida 9 de Julio: </strong>esta es una de las arterias principales de la ciudad y su nombre celebra la independencia del país en 1816. Recorre alrededor de tres kilómetros en pleno centro de la ciudad, comunicando los nudos de transporte y las principales terminales ferroviarias</li><li><strong>Obelisco</strong>: con casi 70 metros de altura, este monumento es un icono de Buenos Aires y se levantó justamente donde fue izada la bandera nacional por primera vez en la ciudad.</li><li><strong>Teatro Colón:</strong> Es considerado uno de los mejores teatros del mundo. Reconocido por su acústica y por el valor artístico de su construcción, cumplió 100 años en 2008..</li><li><strong>Plaza del General San Martín:</strong> un lindo espacio verde en el centro de la ciudad que celebra al libertador de Argentina.</li>
+                <li><strong>Monumento a los caídos en Malvinas</strong>: la guerra de Malvinas es el talón de aquiles en muchas conversaciones con argentinos. Fueron muchos los que cayeron <a href="https://es.wikipedia.org/wiki/Guerra_de_las_Malvinas" target="_blank" rel="noreferrer noopener"><strong>en esta lucha </strong></a>que aún sigue levantando ampollas.</li>
+                <li><strong>Cementerio de Recoleta</strong>: un cementerio lleno de historias y leyendas donde están enterradas, entre otras, personas tan queridas como Eva Perón.</li>
+            </ul>
+            </div>
+          </article>
+          <article>
+            <h2 class="text-center">Día 3: el otro Buenos Aires</h2>  
+            <!-- <div class="container-fluid"> -->
+            <div class="col-md-8 card-img border-0" style="float:right;"><img src="/assets/Barrio de San Telmo en Buenos Aires.jpg" class="card-img-top" alt="Barrio de San Telmo en Buenos Aires">
+            </div>
+            <p>Más allá del circuito clásico, hay barrios a los que hay que dedicarles su tiempo. Para este día, el día 3 en Argentina, organiza una ruta por <strong>Palermo</strong>, el barrio más cool de la ciudad. Es un sitio ideal para ir a tomar algo a media tarde, ya que tiene muy buen ambiente de tienditas y pequeñas galerías de arte, así como bares y restaurantes. Por no hablar de que hay <strong>hay muchos murales</strong>.</p>
+            <p>Puedes leer más en <a href="https://turismo.buenosaires.gob.ar/es/recorrido/arte-urbano-ruta-emergente" target="_blank" rel="noreferrer noopener nofollow"><strong>este recorrido de arte urbano</strong></a> que propone Turismo de Buenos Aires.</p>
+            <p>
+              Hay que guardar tiempo también para <strong>San Telmo</strong>. Allí podrás caminar por el <strong>Paseo de la Historieta</strong>, que rinde homenaje a las grandes figuras del cómic en Argentina, como el queridísimo Quino, creador de <strong>Mafalda</strong>. Al sur de San Telmo se ubica <strong>La Boca, el barrio de Caminito, de los colores, del Boca Juniors, del culto a Maradona</strong>.
+            </p>
+          </article>
+          <article>
+            <h2 class="text-center">Días 4 y 5: Ushuaia, la ciudad del fin del mundo argentino</h2>  
+            <!-- <div class="container-fluid"> -->
+            <div class="col-md-8 card-img border-0" style="float:left;"><img src="/assets/argentina-en-dos-semanas-5-Ushuaia.jpeg" class="card-img-top" alt="Ruta por Argentina en dos semanas: Ushuaia">
+            </div>
+              <p><strong>¿Quién no ha soñado alguna vez con aquel Faro del Fin del Mundo de Julio Verne?</strong> ¿Qué ver en Ushuaia? ¿Qué hacer en Ushuaia? Cuando uno piensa en Ushuaia no puede menos que imaginarse así, exactamente en el fin del mundo, al sur del hemisferio sur, <strong>en la misteriosa Isla de Tierra del Fuego</strong>. Allí mismo, en <strong>la ciudad más austral del mundo: Ushuaia</strong>, joya de la Patagonia argentina.</p>
+              <p>A las puertas de la Antártida, Ushuaia se consagra como un destino ideal tanto para invierno, donde la temporada de esquí atrae a gente de todo el país, como para verano, donde son las navegaciones, trekking y las excursiones de naturaleza las que acaparan toda la atención.</p>
+          </article>
+          <article>
+            <h2 class="text-center">Días 6 y 7 en Argentina: El Calafate y Perito Moreno</h2>  
+            <!-- <div class="container-fluid"> -->
+            <div class="col-md-8 card-img border-0" style="float:right;"><img src="/assets/argentina-en-dos-semanas-4-Glaciar Perito Moreno.jpeg" class="card-img-top" alt="Ruta por Argentina en dos semanas: l Glaciar Perito Moreno">
+            </div>
+              <p><strong>Para ver el Glaciar Perito Moreno desde las pasarelas</strong> del frente, puedes llegar en coche de alquiler, en los autobuses que salen del pueblo o en una excursión. Pero además, <strong>puedes navegar frente al glaciar e incluso caminar sobre él</strong>. Estas son algunas de las opciones que te recomiendo: <strong>Tour a las pasarelas</strong>, puedes ir en bus o en coche de alquiler.</p>
+              <p><strong>Navegación frente al Perito Moreno</strong>. Puedes combinar esto con la visita a las pasarelas y hacer todo el mismo día, así no tienes que volver al parque de nuevo y volver a pagar la entrada.</p>
+          </article>
+          <!--Formulario-->
+          <div class="container mb-3">
+            <div class="mb-3">
+              <p>¿Te gustó el post?</p>
+              <button type="button" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"></path>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-frown" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                <path d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="mb-3">
+              <label for="FormNombre" class="form-label">Dejá tu comentario</label>
+              <input type="text" class="form-control" id="formNombre" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                  <label for="FormTextarea" class="form-label">Escribe tu comentario</label>
+                  <textarea class="form-control" id="FormTextarea" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-success mb-3">Enviar</button>
+          </div>
+          <hr>
+          <!--COMENTARIOS-->
+          <div class="container mb-3 mt-3">
+            <!-- comentario 1 -->
+            <div class="row mb-3">
+              <p class="h4"> Comentarios</p>
+              <div class="col-1">
+                <img src="/assets/Marcos-_comentarios_1.jfif"border rounded-circle me-2"alt="Avatar" style="height: 40px" />
+              </div>
+              <div class="col-11">
+                <div class="bg-light rounded-3 px-3 py-1">                  
+                  <strong>Marcos Hernandez</strong>
+                  <p>Excelnte blog, ya estoy agendando un viaje a Argentina para mis próximas vacaciones de verano!!!</p>                  
+                </div>
+              </div>
+            </div>       
+            <!-- comentario 2 -->
+            <div class="row mb-3">
+              <div class="col-1">
+                <img src="/assets/Magali-Comentario2.jfif" class="border rounded-circle me-2"alt="Avatar" style="height: 40px" />
+              </div>
+              <div class="col-11">
+                <div class="bg-light rounded-3 px-3 py-1">                  
+                  <strong>Magalí Mackenzie</strong>
+                  <p>Increible país, yo también pienso en recorrer en 15 dias, con todas tus recomendaciones, gracias!!!</p>                  
+                </div>
+              </div>
+            </div>
+            <!-- comentario 3-->
+            <div class="row mb-3">
+              <div class="col-1">
+                <img src="/assets/Marcie-comentario3.jfif" class="border rounded-circle me-2"alt="Avatar" style="height: 40px" />
+              </div>
+              <div class="col-11">
+                <div class="bg-light rounded-3 px-3 py-1">                  
+                  <strong>Marcie Mcgee</strong>
+                  <p>Me gustó este post, en mi caso, yo ya conozco Buenos Aires, pero el resto de Argentina me falta, pronto estaré por ahí.</p>                  
+                </div>
+              </div>
+            </div>
+            <!-- comentario 4 -->
+            <div class="row mb-3">
+              <div class="col-1">
+                <img src="/assets/Lucia-comentario4.jpg" class="border rounded-circle me-2"alt="Avatar" style="height: 40px" />
+              </div>
+              <div class="col-11">
+                <div class="bg-light rounded-3 px-3 py-1">                  
+                  <strong>Lucia Mirande</strong>
+                  <p>El post es bastante atractivo, ya tomé notas para mi proxima visita a Argentina, pero en mi caso, creo que 15 dias seria muy poco, me tienta recorrerlo en al menos 30 días, gracias por el Post</p>                  
+                </div>
+              </div>
+            </div>
+            <!-- comentario 5 -->
+            <div class="row mb-3">
+              <div class="col-1">
+                <img src="/assets/federico-comentario5.jpg" class="border rounded-circle me-2" alt="Avatar" style="height: 40px" />
+              </div>
+              <div class="col-11">
+                <div class="bg-light rounded-3 px-3 py-1">                  
+                  <strong>Federico Rodriguez</strong>
+                  <p>Excelente post, muy descriptivo, hermoso país para conocer, sigan así</p>                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="buscador col-sm-4 pt-4 p-lg-4"><!--Renzo-->
+          <div class="container-fluid">
+            <p class="h4">Buscar en el Blog de Viaje </p>          
+            <form class="d-flex ">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+          <hr>
+          <div class="container-fluid">
+            <div class="list-group mb-3 mt-3">
+              <p class="h4">¡Mirá las publicaciones de nuestro Blog!</p>
+              <a href="#" class="list-group-item list-group-item-action">Agosto 2022</a>
+              <a href="/proyecto/septiembre2.html" class="list-group-item list-group-item-action">Septiembre 2022</a>
+              <a href="#" class="list-group-item list-group-item-action">Octubre 2022</a>
+              <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true"> Gracias por elegirnos</a>
+            </div>
+          </div>
+          <div class="d-none d-sm-block">
+            <a href="#"><img src="assets/tucumanturismo.png" class="d-block m-auto pt-4" alt="Publicidad del Ente Tucumán Turismo"></a>
+          </div>
+        </div>
+      </div><!--FINAL DE LAS COLUMNAS-->
+    </div>
+    <footer class="bg-gradient bg-secondary text-black py-2"><!--Nico-->
+        <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto pt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-black">METROPOLUNITE</h5>
+              <p>
+                <img src="assets/logo.png" width="200px">
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-5 mx-auto pt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-black">Acerca de nuestro blog</h5>
+              <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sit adipisci ut veritatis temporibus ipsa!</p>
+            </div>
+              <div class="col-md-3 col-lg-2 col-xl mx-auto pt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-black">Contacto</h5>
+                <p class="text-black">
+                  <i class="fas fa-home mr-3"></i> Argentina
+                </p>
+                <p class="text-black">
+                  <i class="fas fa-envelope mr-3"></i> pornocrecer@gmail.com
+                </p>
+                <p class="text-black">
+                  <i class="fas fa-phone mr-3 text-black"></i> 3816584283
+                </p>
+              </div>
+              <hr class="mb-4">
+              <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                  <p class="text-black"> Copyright@2022 Derechos reservados por:
+                    <a class="text-black fw-bold" href="#" style="text-decoration: none;">
+                    Grupo 28i
+                    </a></p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                  <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                      <li class="list-inline-item" > 
+                        <a href="https://es-la.facebook.com/"
+                        target="_blank" class="btn-floating btn-sm text-black" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="https://twitter.com/?lang=es" target="_blank" class="btn-floating btn-sm text-black" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="error404.html" target="_top" class="btn-floating btn-sm text-black" style="font-size: 23px;"><i class="fab fa-google-plus"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="https://www.instagram.com/" target="_blank" class="btn-floating btn-sm text-black" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+        </div> 
+    </footer>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetropolUnite</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" type="text/css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+    <!--Css Propio-->
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light bg-gradient py-3 py-xl-4">
+            <div class="container-fluid"> <!--ver responsive tamaño de fuente de los links-->
+              <img src="assets/logo.png" class="col-3 col-md-1 px-3" alt="">
+              <a class="navbar-brand" href="index2.html">Nombre Blog</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto my-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active ms-1 fw-bold" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#">Acerca de nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="contacto2.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="Login2.html">Login</a>
+                  </li>
+                </ul>
+                <!--btn Modal-->
+                <button type="button" class="btn btn-outline-success fw-bold mx-1 me-lg-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Suscribete</button>
+              </div>
+            </div>
+          </nav>
+          <!--MODAL-->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-light" id="exampleModalLabel">Suscribete a nuestro blog</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Correo Electronico</label>
+                      <input type="email" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3 bg-warning bg-opacity-50">
+                        <p class="p-1 text-center">Recibiras notificaciones de nuestro blog para mantenerte al tanto</p>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <a href="error404.html" class="btn btn-outline-success">Suscripcion!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </header><!--FIN DEL HEADER-->
+    <!--Carrousel-->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/slide1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block text-center text-md-start">
+            <h4 class="fw-bold d-none d-md-block">Comparte tus momentos!</h4><!--d-none d-m-block para no mostrar contenido en celu-->
+            <p class="d-none d-md-block">Disponemos de una galeria de imagenes donde puedes compartir con la comunidad esos momentos unicos que capturas durante tus viajes</p>
+            <a href="galeria.html" class="btn btn-outline-light">Ir a Galerìa</a> <!--el btn se muestra en pantalla de celu-->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/slide2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block text-center text-md-start">
+            <h4 class="fw-bold d-none d-md-block">Comparte tus momentos!</h4>
+            <p class="d-none d-md-block">Disponemos de una galeria de imagenes donde puedes compartir con la comunidad esos momentos unicos que capturas durante tus viajes</p>
+            <a href="galeria.html" class="btn btn-outline-light">Ir a Galerìa</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/slide3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block text-center text-md-start">
+            <h4 class="fw-bold d-none d-md-block">Comparte tus momentos!</h4>
+            <p class="d-none d-md-block">Disponemos de una galeria de imagenes donde puedes compartir con la comunidad esos momentos unicos que capturas durante tus viajes</p>
+            <a href="galeria.html" class="btn btn-outline-light">Ir a Galerìa</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div><!--FIN CARROUSEL-->
+    <!--Contenido de las columnas-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8 border p-4">
+          <!--Nota-->
+          <div class="container-fluid mb-3">
+            <p class="h4 text-center mb-3">Solicitar millas AR Plus por un vuelo de Aerolíneas Argentinas</p>
+            <img src="/assets/aerolineas argentinas.jpg" class="img-fluid col-sm-6 float-sm-end mb-3 ms-md-3" alt="...">
+          
+            <p>
+              A veces pasa que uno olvida informar su número de pasajero frecuente antes de volar: no lo informa al comprar el pasaje, no lo informa al hacer el check-in y tampoco en el mostrador en el aeropuerto cuando va a despachar el equipaje.
+            </p>
+          
+            <p>
+              Así nos pasó el otro día cuando, estando en el Aeroparque Jorge Newbery de Buenos Aires, compramos un ticket intempestivamente para volar pocos minutos después hacia Mar del Plata. Corrimos para comprarlo, corrimos para despachar el equipaje, corrimos para pasar el control de seguridad, pero llegamos a embarcar.
+            </p>
+          
+            <p>
+              Una vez pasada la corrida, nos dimos cuenta de que no habíamos sumado las millas por ese vuelo. Eran pocas millas, pero, por una parte, todo suma y, por la otra, en Aerolíneas Plus cualquier movimiento aéreo renueva por 36 meses la fecha de vencimiento de todas las millas de la cuenta, así que siempre es importante sumarlas.
+            </p>
+
+            <p>
+              Algo muy bueno de esta opción que prevé Aerolíneas Argentinas es que la acreditación es instantánea, basta cargar algunos datos del ticket (que están en la tarjeta de embarque) y enseguida aparece el mensaje de confirmación y las millas en la cuenta.
+            </p>
+
+            <p>
+              Vaya este post a modo de recordatorio, no pierdan la oportunidad de sumar millas por sus vuelos.
+            </p>    
+          </div>
+          <!--Formulario-->
+          <div class="container mb-3">
+            <div class="mb-3">
+              <p>¿Te gustó el post?</p>
+              <button type="button" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"></path>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-frown" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                <path d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"></path>
+                </svg>
+              </button>
+            </div>            
+            <div class="mb-3">
+              <label for="FormNombre" class="form-label">Dejá tu comentario</label>
+              <input type="text" class="form-control" id="formNombre" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                  <label for="FormTextarea" class="form-label"></label>
+                  <textarea class="form-control" id="FormTextarea" placeholder="Escribe tu comentario" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-success mb-3">Enviar</button>
+          </div>
+          <hr>
+          <!--COMENTARIOS-->
+          <div class="container mb-3 mt-3">
+            <p class="h4"> Comentarios</p>
+            <!-- comentario 1 -->            
+            <div class="row mb-3">
+              <div class="col-1">
+                <img src="/assets/Marcos- comentarios 1.jfif" class="border rounded-circle me-2" alt="Avatar" style="height: 40px" />
+              </div>
+              <div class="col-11">
+                <div class="bg-light rounded-3 px-3 py-1">                  
+                  <strong>Marcos Hernandez</strong>
+                  <p>Buen Post, siempre me olvido de las millas</p>                  
+                </div>
+              </div>
+            </div>       
+            <!-- comentario 2 -->
+            <div class="row mb-3">
+              <div class="col-1">
+                <img src="/assets/Magali-Comentario2.jfif" class="border rounded-circle me-2"alt="Avatar" style="height: 40px" />
+              </div>
+              <div class="col-11">
+                <div class="bg-light rounded-3 px-3 py-1">                  
+                  <strong>Marcie Mcgee</strong>
+                  <p>jajajajja Cómo te vas a olvidar de las millas, eso jamás!!!! si no habrán viajado con ellas</p>                  
+                </div>
+              </div>
+            </div>
+            <!-- comentario 3-->
+            <div class="row mb-3">
+              <div class="col-1">
+                <img src="/assets/Marcie-comentario3.jfif" class="border rounded-circle me-2"alt="Avatar" style="height: 40px" />
+              </div>
+              <div class="col-11">
+                <div class="bg-light rounded-3 px-3 py-1">                  
+                  <strong>Marcie Mirra</strong>
+                  <p>Decime que no soy la única que se olvida siempre de las millas jaja, excelente post, será que puedo recuperar las millas de otra aereolinea perteneciente a la misma alinza?</p>                  
+                </div>
+              </div>
+            </div>
+            <!-- comentario 4 -->
+            <div class="row mb-3">
+              <div class="col-1">
+                <img src="/assets/Lucia-comentario4.jpg" class="border rounded-circle me-2"alt="Avatar" style="height: 40px" />
+              </div>
+              <div class="col-11">
+                <div class="bg-light rounded-3 px-3 py-1">                  
+                  <strong>Lucia Mirande</strong>
+                  <p>Sugerencia, seria bueno que pongan capturas de pantalla explicando el procedimiento, o en última un video, gracias por el Post chicos !!</p>                  
+                </div>
+              </div>
+            </div>
+            <!-- comentario 5 -->
+            <div class="row mb-3">
+              <div class="col-1">
+                <img src="/assets/federico-comentario5.jpg" class="border rounded-circle me-2" alt="Avatar" style="height: 40px" />
+              </div>
+              <div class="col-11">
+                <div class="bg-light rounded-3 px-3 py-1">                  
+                  <strong>Federico Rodriguez</strong>
+                  <p>Todo suma, valoro el post chicos, sigan así</p>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 p-4"><!--Renzo-->
+          <div class="container-fluid">
+            <p class="h4">Buscar en el Blog de Viaje </p>          
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+          <hr>
+          <div class="container-fluid">
+            <div class="list-group mt-3">
+              <p class="h4">¡Mirá las publicaciones de nuestro Blog!</p>
+              <a href="#" class="list-group-item list-group-item-action">Agosto 2022</a>
+              <a href="/septiembre2.html" class="list-group-item list-group-item-action">Septiembre 2022</a>
+              <a href="#" class="list-group-item list-group-item-action">Octubre 2022</a>
+              <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true"> Gracias por elegirnos</a>
+            </div>
+          </div>
+          <div class="d-none d-sm-block">
+            <a href="https://www.tucumanturismo.gob.ar/" target="_blank"><img src="assets/tucumanturismo.png" class="d-block m-auto pt-4" alt="Publicidad del Ente Tucumán Turismo"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FINAL DE LAS COLUMNAS-->
+    <footer class="bg-secondary text-black pt-5 pb-4"><!--Nico-->
+        <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-black">METROPOLUNITE</h5>
+              <p>
+                <img src="assets/logo.png" width="200px">
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-5 mx-auto mt-2">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-black">Acerca de nuestro blog</h5>
+              <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sit adipisci ut veritatis temporibus ipsa!</p>
+            </div>
+              <div class="col-md-3 col-lg-2 col-xl mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-black">Contacto</h5>
+                <p class="text-black">
+                  <i class="fas fa-home mr-3"></i> Argentina
+                </p>
+                <p class="text-black">
+                  <i class="fas fa-envelope mr-3"></i> pornocrecer@gmail.com
+                </p>
+                <p class="text-black">
+                  <i class="fas fa-phone mr-3 text-black"></i> 3816584283
+                </p>
+              </div>
+              <hr class="mb-4">
+              <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                  <p class="text-black"> Copyright@2022 Derechos reservados por:
+                    <a class="text-black fw-bold" href="#" style="text-decoration: none;">
+                    Grupo 28i
+                    </a></p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                  <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                      <li class="list-inline-item" > 
+                        <a href="https://es-la.facebook.com/"
+                        target="_blank" class="btn-floating btn-sm text-black" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="https://twitter.com/?lang=es" target="_blank" class="btn-floating btn-sm text-black" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="error404.html" target="_top" class="btn-floating btn-sm text-black" style="font-size: 23px;"><i class="fab fa-google-plus"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="https://www.instagram.com/" target="_blank" class="btn-floating btn-sm text-black" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+        </div> 
+    </footer>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
